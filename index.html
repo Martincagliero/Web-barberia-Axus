@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbería premium - Experiencia de estilo exclusiva">
+    <title>Axus Barbershop - Estilo de Alto Nivel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">AXUS BARBERSHOP</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#gallery" class="nav-link">Trabajos</a></li>
+                <li><a href="#booking" class="nav-link">Reservar</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">La Excelencia en Cada Detalle</h1>
+            <p class="hero-subtitle fade-in-delay">Más que un corte, una experiencia de estilo exclusiva</p>
+            <a href="#booking" class="hero-btn fade-in-delay-2">Reservar Cita</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2 class="section-title">Experiencias de Estilo</h2>
+                <p class="section-description">Cada servicio está diseñado con precisión y dedicación artesanal</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">❶</div>
+                    <h3 class="service-title">Barba</h3>
+                    <p class="service-description">Perfilado y cuidado profesional de barba con técnicas artesanales.</p>
+                    <span class="service-price">$ precio</span>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✂</div>
+                    <h3 class="service-title">Corte Clásico</h3>
+                    <p class="service-description">Técnica tradicional con tijera y navaja, adaptada a tu estilo personal.</p>
+                    <span class="service-price">$ precio</span>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">◉</div>
+                    <h3 class="service-title">Tintura</h3>
+                    <p class="service-description">Coloración profesional y personalizada con productos de alta calidad.</p>
+                    <span class="service-price">$ precio</span>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">─</div>
+                    <h3 class="service-title">Afeitado</h3>
+                    <p class="service-description">Ritual completo con toallas calientes, aceites aromáticos y navaja artesanal.</p>
+                    <span class="service-price">$ precio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestro Arte</span>
+                <h2 class="section-title">Trabajos Destacados</h2>
+                <p class="section-description">Cada cliente es una obra de arte única</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" style="background-image: url('barba.jpg');">
+                        <span>Barba</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" style="background-image: url('corte.jpg');">
+                        <span>Corte Clásico</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" style="background-image: url('tintura.jpg');">
+                        <span>Tintura</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" style="background-image: url('afeitado.jpg');">
+                        <span>Afeitado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Agenda tu Cita</span>
+                <h2 class="section-title">Reserva tu Experiencia</h2>
+                <p class="section-description">Selecciona el día y horario que mejor se adapte a ti</p>
+            </div>
+
+            <div class="booking-container">
+                <div class="booking-form">
+                    <div class="form-group">
+                        <label for="service" class="form-label">Servicio</label>
+                        <select id="service" class="form-select">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="barba">Barba - $ precio</option>
+                            <option value="corte-clasico">Corte Clásico - $ precio</option>
+                            <option value="tintura">Tintura - $ precio</option>
+                            <option value="afeitado">Afeitado - $ precio</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="barber" class="form-label">Barbero (Opcional)</label>
+                        <select id="barber" class="form-select">
+                            <option value="">Equipo Axus</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Selecciona una fecha</label>
+                        <div class="date-selector" id="dateSelector">
+                            <!-- Generado dinámicamente por JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="timeSlotsContainer" style="display: none;">
+                        <label class="form-label">Horarios disponibles</label>
+                        <div class="time-slots" id="timeSlots">
+                            <!-- Generado dinámicamente por JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre completo</label>
+                        <input type="text" id="name" class="form-input" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="+54 9 11 1234-5678">
+                    </div>
+
+                    <button class="booking-btn" id="bookingBtn" disabled>Confirmar Reserva</button>
+                    
+                    <div class="booking-confirmation" id="confirmationMessage" style="display: none;">
+                        <div class="confirmation-icon">✓</div>
+                        <h3>¡Reserva Confirmada!</h3>
+                        <p id="confirmationDetails"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Encuéntranos</span>
+                <h2 class="section-title">Visítanos</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Ubicación</h3>
+                        <p>Av. Santa Fe 1234<br>Palermo, Buenos Aires<br>Argentina</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Horarios</h3>
+                        <p>Lunes a Viernes: 10:00 - 20:00<br>Sábados: 09:00 - 19:00<br>Domingos: Cerrado</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Contacto</h3>
+                        <p>+54 9 11 5555-1234<br>info@axusbarbershop.com</p>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <p>Google Maps</p>
+                        <span>Av. Santa Fe 1234, Palermo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">AXUS BARBERSHOP</div>
+                <p class="footer-text">Tu estilo, nuestra excelencia</p>
+                <p class="footer-copyright">&copy; 2026 Axus Barbershop. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
